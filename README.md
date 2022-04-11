@@ -9,11 +9,11 @@ Fragment-1: UserLoginProfileFragment
 - Firebase is used to check if the current user is a new user
 - Appropriate Toast messages are shown when users click Sign-In & Sign-Up buttons
 - For new users: 
-   (1) They should provide all profile, then click Sign Up -> Sign In to navigate to to Fragment-2
-   (2) A new Firebase fork is created to store their profile
+   1. They should provide all profile, then click Sign Up -> Sign In to navigate to to Fragment-2
+   1. A new Firebase fork is created to store their profile
 - For users who registrated before:
-   (1) Only username and password are required, then click Sign In -> to Fragment-2.
-   (2) All Firebase data corresponding to this use are downloaded, such as the symptoms they updated before 
+   1. Only username and password are required, then click Sign In -> to Fragment-2.
+   1. All Firebase data corresponding to this use are downloaded, such as the symptoms they updated before 
 - At the same time, the user-image and username are sent to watch through DataClient
 
 Fragment-2: UserMainMenuFragment
