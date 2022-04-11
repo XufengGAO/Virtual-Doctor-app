@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:deviceIds="wear">
+
+        <ImageView
+            android:id="@+id/logo_view"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/no_image"
+            app:layout_constraintBottom_toTopOf="@id/my_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/my_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome VD"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/hrSensor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo_view" />
+
+        <TextView
+            android:id="@+id/hrSensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Your Heart Rate"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_text"
+            app:layout_constraintBottom_toTopOf="@id/StartButton"/>
+
+        <Button
+            android:id="@+id/StartButton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="History"
+            android:textColor="@color/black"
+            android:background="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@id/hrSensor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="clickHistoryButton"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/userlgoinprofilefragment">
+<!--here we change the starting point of the fragment-->
+
+    <fragment
+        android:id="@+id/usermainmenu"
+        android:name="com.epfl.esl.endlessapi.Fragment.UserMainMenuFragment"
+        android:label="UserIDFragment"
+        tools:layout="@layout/fragment_user_main_menu">
+        <action
+            android:id="@+id/action_usermainmenu_to_searchfragment"
+            app:destination="@id/searchfragment" />
+        <action
+            android:id="@+id/action_usermainmenu_to_analyzefragment"
+            app:destination="@id/analyzefragment" />
+        <argument
+            android:name="profile"
+            app:argType="com.epfl.esl.endlessapi.UserDataClass"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_usermainmenu_to_userlgoinprofilefragment"
+            app:destination="@id/userlgoinprofilefragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchfragment"
+        android:name="com.epfl.esl.endlessapi.Fragment.SearchSymptomsFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchfragment_to_usermainmenu"
+            app:destination="@id/usermainmenu" />
+        <action
+            android:id="@+id/action_searchfragment_to_symptomseekbar"
+            app:destination="@id/symptomseekbar" />
+        <action
+            android:id="@+id/action_searchfragment_to_symptomspiner"
+            app:destination="@id/symptomspinner" />
+        <argument
+            android:name="symptomChoice"
+            app:argType="com.epfl.esl.endlessapi.Symptoms_Detail_Provider.FeatureDetailsChoice"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/symptomseekbar"
+        android:name="com.epfl.esl.endlessapi.Fragment.SymptomsSeekBarFragment"
+        android:label="SymptomsSeekBar"
+        tools:layout="@layout/fragment_symptoms_seek_bar">
+        <action
+            android:id="@+id/action_symptomseekbar_to_searchfragment"
+            app:destination="@id/searchfragment" />
+        <argument
+            android:name="symptomDetails"
+            app:argType="com.epfl.esl.endlessapi.Symptoms_Detail_Provider.FeatureDetails"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/symptomspinner"
+        android:name="com.epfl.esl.endlessapi.Fragment.SymptomsSpinnerFragment"
+        android:label="SymptomsSpinner"
+        tools:layout="@layout/fragment_symptoms_spinner">
+        <action
+            android:id="@+id/action_symptomspinner_to_searchfragment"
+            app:destination="@id/searchfragment" />
+        <argument
+            android:name="symptomDetails"
+            app:argType="com.epfl.esl.endlessapi.Symptoms_Detail_Provider.FeatureDetails"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/analyzefragment"
+        android:name="com.epfl.esl.endlessapi.Fragment.AnalyzeFragment"
+        android:label="AnalyzeFragment"
+        tools:layout="@layout/fragment_analyze">
+        <action
+            android:id="@+id/action_analyzefragment_to_usermainmenu"
+            app:destination="@id/usermainmenu" />
+        <action
+            android:id="@+id/action_analyzefragment_to_patientdocumentationfragment"
+            app:destination="@id/patientdocumentationfragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/patientdocumentationfragment"
+        android:name="com.epfl.esl.endlessapi.Fragment.PatientDocumentation"
+        android:label="PatientDocumentation"
+        tools:layout="@layout/fragment_patient_documentation">
+        <action
+            android:id="@+id/action_patientdocumentationfragment_to_analyzefragment"
+            app:destination="@id/analyzefragment" />
+        <action
+            android:id="@+id/action_patientdocumentationfragment_to_specialistRecommendFragment"
+            app:destination="@id/specialistRecommendFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userlgoinprofilefragment"
+        android:name="com.epfl.esl.endlessapi.Fragment.UserLoginProfileFragment"
+        android:label="UserLoginProfile"
+        tools:layout="@layout/fragment_user_login_profile">
+
+        <action
+            android:id="@+id/action_userlgoinprofilefragment_to_usermainmenu"
+            app:destination="@id/usermainmenu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/specialistRecommendFragment"
+        android:name="com.epfl.esl.endlessapi.Fragment.RecommendedSpecialistFragment"
+        android:label="RecommendedSpecialistFragment"
+        tools:layout="@layout/fragment_recommended_specialist">
+        <action
+            android:id="@+id/action_specialistRecommendFragment_to_patientdocumentationfragment"
+            app:destination="@id/patientdocumentationfragment" />
+    </fragment>
+
+
+
+
+
+</navigation>

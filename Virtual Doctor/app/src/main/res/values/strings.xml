@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Virtual Doctor</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_symptoms">Add Symptoms</string>
+    <string name="documentation">Documentation</string>
+    <string name="analyze">Analyze</string>
+    <string name="further_information">Further Information</string>
+    <string name="user_name">User Name:</string>
+    <string name="welcome">Welcome to Virtual Doctor</string>
+    <string name="the_symptoms">The Symptoms:</string>
+    <string name="confirm">Save</string>
+    <string name="possible_diagnoses">Possible diagnoses(From High to Low):</string>
+    <string name="finish">Finish</string>
+    <string name="your_heart_rate">Your Heart Rate:</string>
+    <string name="patient_documentation">Patient Documentation</string>
+    <string name="chief_complaint">Chief Complaint: </string>
+    <string name="no_data">No Data</string>
+    <string name="past_medical_history">Past Medical History: </string>
+    <string name="assessment">Assessment: </string>
+    <string name="problems">Top 5 Possible Problems:</string>
+    <string name="symptoms_provided_by_patient">Clinical Data Provided by Patient:</string>
+    <string name="go_back">Go Back</string>
+
+    <string name="pick_image">pick_image</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="pass_star">pass_star</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hyperlink">I have read, understood and I accept and agree to comply with the
+    <a href="https://endlessmedical.com/TermsOfUse/">Terms of Use</a></string>
+    <string name="no_history_data_provided">No Historical Data Provided</string>
+    <string name="recommended_specialist">Recommended Specialist: </string>
+    <string name="_0">0</string>
+    <string name="of_selected_features"># of Selected Features:</string>
+    <string name="no_disease">No disease diagnose \nPlease add more symptoms if you need further diagnosis.</string>
+</resources>

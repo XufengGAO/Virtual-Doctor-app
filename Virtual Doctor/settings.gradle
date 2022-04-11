@@ -1,0 +1,3 @@
+rootProject.name = "Virtual Doctor"
+include ':app'
+include ':wear'

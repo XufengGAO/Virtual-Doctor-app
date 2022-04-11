@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".SubActivity.SymptomsSeekBarActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_boxedEdges="bottom"
+        android:background="@color/white">
+
+        <androidx.wear.widget.WearableRecyclerView
+            android:id="@+id/SymptomName"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:scrollbars="vertical"
+            android:layout_marginTop="12dp"
+            tools:listitem="@layout/history_item_adapter"
+            app:layout_constraintBottom_toTopOf="@id/SymptomValue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </androidx.wear.widget.WearableRecyclerView>
+
+
+        <TextView
+                android:id="@+id/SymptomValue"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_background"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@id/valueSeekBar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/SymptomName"/>
+            <SeekBar
+                android:id="@+id/valueSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:min="0"
+                android:progress="25"
+                app:layout_constraintBottom_toTopOf="@+id/ButtonArea"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/SymptomValue"
+                />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ButtonArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/valueSeekBar">
+
+            <ImageButton
+                android:id="@+id/ConfirmButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/circle_button_confirm"
+                android:src="@drawable/baseline_done_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/CancelButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="10dp"
+                android:onClick="clickSeekBarConfirmButton"
+                />
+
+            <ImageButton
+                android:id="@+id/CancelButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/circle_button_cancel"
+                android:src="@drawable/baseline_clear_24"
+                app:layout_constraintStart_toEndOf="@id/ConfirmButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="10dp"
+                android:onClick="clickSeekBarCancelButton"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</layout>

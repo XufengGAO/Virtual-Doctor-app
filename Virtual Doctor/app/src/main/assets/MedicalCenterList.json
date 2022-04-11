@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Medical Center La Source",
+    "latitude": "46.52684564801883",
+    "longitude": "6.628363198631159",
+    "address": "Ave Alexandre-Vinet 30 1004, 1004 Lausanne",
+    "url": "https://www.lasource.ch/en/node/305",
+    "imageName": "medical_center_la_source"
+  },
+  {
+    "name": "Lausanne University Hospital",
+    "latitude": "46.525091266735906",
+    "longitude": "6.642471461393343",
+    "address": "Rue du Bugnon 46, 1011 Lausanne",
+    "url": "https://www.lausanneuniversityhospital.com/home",
+    "imageName": "lausanne_university_hospital"
+  },
+  {
+    "name": "Centre Médical De Vidy, Groupe Vidymed",
+    "latitude": "46.518388768702636",
+    "longitude": "6.600566485139639",
+    "address": "Rte de Chavannes 11, 1007 Lausanne",
+    "url": "https://www.vidymed.ch",
+    "imageName": "centre_medical_de_vidy_groupe_vidymed"
+  },
+  {
+    "name": "Clinique Cecil Hirslanden Group",
+    "latitude": "46.520514633614006",
+    "longitude": "6.62166296979477",
+    "address": "Av. Louis-Ruchonnet 53, 1003 Lausanne",
+    "url": "https://www.hirslanden.ch/en/clinique-cecil/home.html",
+    "imageName": "clinique_cecil_hirslanden_group"
+  },
+  {
+    "name": "Medbase Lausanne",
+    "latitude": "46.51763224627998",
+    "longitude": "6.628578430689825",
+    "address": "Pl. de la Gare 11a, 1003 Lausanne",
+    "url": "https://www.medbase.ch/fr/",
+    "imageName": "medbase_lausanne"
+  }
+
+]

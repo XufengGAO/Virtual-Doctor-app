@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "848343617108",
+    "firebase_url": "https://app-final-project-df834-default-rtdb.firebaseio.com",
+    "project_id": "app-final-project-df834",
+    "storage_bucket": "app-final-project-df834.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848343617108:android:edd6165bb5bc31a1dc67c1",
+        "android_client_info": {
+          "package_name": "com.epfl.esl.endlessapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848343617108-d2e8focs8svneiq8ar6edvpk39bh507e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA20qiNd11WFgcHAfIDjsddhsQybR22xQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848343617108-d2e8focs8svneiq8ar6edvpk39bh507e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848343617108:android:ccde709de3dd304edc67c1",
+        "android_client_info": {
+          "package_name": "com.epfl.esl.sportstracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848343617108-d2e8focs8svneiq8ar6edvpk39bh507e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA20qiNd11WFgcHAfIDjsddhsQybR22xQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848343617108-d2e8focs8svneiq8ar6edvpk39bh507e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
