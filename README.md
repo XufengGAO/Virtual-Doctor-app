@@ -1,5 +1,5 @@
 # Symptom-Checker-APP
-This app supports 2 devices: Mobile and Watch, and uses EndlessMedical API to implement symptoms analysis.
+This app supports 2 devices: Mobile and Watch, and uses [EndlessMedical API](https://endlessmedical.com/) to implement symptoms analysis.
 
 ## Mobile terminal
 There are 8 fragments in mobile, then we use the navigation.xml to implement the transition between fragments
