@@ -20,8 +20,8 @@ Fragment-2: UserMainMenuFragment
 - This fragment show all the functions our app has
    1. Basic information are shown, such as the Number of Selected Symptoms
    1. Check box to enable Heart Rate detection by sending command to watch 
-      1.1 HR is used as a symptom automatically ***
-      1.1 when HR exceeds thresholds (i.e., min = 50, max = 120), our app is started immediately if it is in background ***
+      * HR is used as a symptom automatically ***
+      * when HR exceeds thresholds (i.e., min = 50, max = 120), our app is started immediately if it is in background
 
    1. Check box to confirm if "Use default values for symptoms not selected when analyzing disease"
    1. Button to add symptoms -> to Fragment-3
@@ -62,8 +62,6 @@ Fragment-5: SymptomsSpinnerFragment
 - This fragment provides similar functions as Fragment-4, but gives different UI (i.e., spinner choice)
 - Synchronized watch is also enabled
 
-
-/*******************************************
 After providing all symptoms (i.e., these symptoms are also updated to EndlessMedical server through corresponding API), 
 users can analyze possible diseases by clicking the analyze button in Fragment-3
 
