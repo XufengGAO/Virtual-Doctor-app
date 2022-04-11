@@ -20,7 +20,7 @@ Fragment-2: UserMainMenuFragment
 - This fragment show all the functions our app has
    1. Basic information are shown, such as the Number of Selected Symptoms
    1. Check box to enable Heart Rate detection by sending command to watch 
-      * HR is used as a symptom automatically ***
+      * HR is used as a symptom automatically
       * when HR exceeds thresholds (i.e., min = 50, max = 120), our app is started immediately if it is in background
 
    1. Check box to confirm if "Use default values for symptoms not selected when analyzing disease"
@@ -80,13 +80,26 @@ Fragment-7:  PatientDocumentationFragment
 Fragment-8:  RecommendedSpecialistFragment
 - This fragment is divided into two parts
 - Part-1 shows the google map which locates current location of users automatically
-- Part 2 shows the full list of recommended hospitals and their locations are marked on the map
-    users can quickly access them from the map
+- Part 2 shows the full list of recommended hospitals and their locations are marked on the map. Users can quickly access them from the map
 
+## Watch terminal
+There are 4 activities in mobile, then we use Intent method to implement the transition between activities
 
+Activity-1: MainActivity
+- This activity mainly provides an interface to other activities
+- Shows the user-image and user-name
+- Provides a button to access the complete list of symptoms selected by users (i.e., synchronized with mobile device) -> HistoryActivity
 
+Activity-2: HistoryActivity
+- Shows all selected symptoms and corresponding symptom values
+- Due to the limited watch scree, we didn't implement symptom edit & delete buttons in watch
+- Users can edit & delete symptoms on mobile, then the history list on watch will update automatically 
+- Provides a button to back to MainActivity
 
-
-
+Activity-3 and -4: SymptomsSeekBarActivity SymptomsSpinnerActivity
+- These two activities are similar to SymptomsSeekBarFragment and SymptomsSpinnerFragment on mobile
+- Provides UI allowing users answer symptom queries
+- The selected symptom values are synchronized with mobile automatically
+- Provides buttons to navigate back to MainActivity
 
 
