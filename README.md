@@ -18,29 +18,29 @@ Fragment-1: UserLoginProfileFragment
 
 Fragment-2: UserMainMenuFragment
 - This fragment show all the functions our app has
-   (1) Basic information are shown, such as the Number of Selected Symptoms
-   (2) Check box to enable Heart Rate detection by sending command to watch 
-        *** HR is used as a symptom automatically ***
+   1. Basic information are shown, such as the Number of Selected Symptoms
+   1. Check box to enable Heart Rate detection by sending command to watch 
+      HR is used as a symptom automatically ***
         *** when HR exceeds thresholds (i.e., min = 50, max = 120), our app is started immediately if it is in background ***
 
-   (3) Check box to confirm if "Use default values for symptoms not selected when analyzing disease"
-   (3) Button to add symptoms -> to Fragment-3
-   (4) Button to get probable disease by analyzing the symptoms the users have provided -> to Fragment-6
-   (4) Button to log out current account -> to Fragment-1
+   1. Check box to confirm if "Use default values for symptoms not selected when analyzing disease"
+   1. Button to add symptoms -> to Fragment-3
+   1. Button to get probable disease by analyzing the symptoms the users have provided -> to Fragment-6
+   1. Button to log out current account -> to Fragment-1
 
 Fragment-3: SearchSymptomsFragment
 - This frament includes 3 parts
 - Part-1: a complete list including all symptom querys provided by EndlessMedical API
-   (1) It is clickable, user can click any symptoms they want
-   (2) We provide a search-match bar, so user can search any symptoms they want by entering key words
-   (3) For symptoms whose values are integer & double (i.e., Age = 22, BMI = 20.0), SymptomsSeekBar fragment is navigated when they are clicked
-   (4) For symptoms whose values are choice string (i.e., What is the timing of dyspnea progression = No dyspnea at all ), 
+   1. It is clickable, user can click any symptoms they want
+   1. We provide a search-match bar, so user can search any symptoms they want by entering key words
+   1. For symptoms whose values are integer & double (i.e., Age = 22, BMI = 20.0), SymptomsSeekBar fragment is navigated when they are clicked
+   1. For symptoms whose values are choice string (i.e., What is the timing of dyspnea progression = No dyspnea at all ), 
         SymptomsSpinner fragment is navigated when they are clicked
 
 - Part-2: a complete list including all symptoms confirmed by users
-   (1) For each list item, the symptom query and the corresponding symptom value (i.e., BMI = 20) are shown
-   (2) Provides an edit button that allows the user to edit symptom values at any time
-   (3) Provides an delete button that allows the user to delete the selected symptom directly
+   1. For each list item, the symptom query and the corresponding symptom value (i.e., BMI = 20) are shown
+   1. Provides an edit button that allows the user to edit symptom values at any time
+   1. Provides an delete button that allows the user to delete the selected symptom directly
 - Part-3: Provides a Save button to navigate to Fragment-1
 
 Fragment-4: SymptomsSeekBarFragment
